@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\agriculture.png" />
+    <Content Remove="wwwroot\images\candidate.png" />
+    <Content Remove="wwwroot\images\compliant.png" />
+    <Content Remove="wwwroot\images\digital-marketing.png" />
+    <Content Remove="wwwroot\images\employee.png" />
+    <Content Remove="wwwroot\images\engineer.png" />
+    <Content Remove="wwwroot\images\facebook.ico" />
+    <Content Remove="wwwroot\images\growth.png" />
+    <Content Remove="wwwroot\images\header1.jpg" />
+    <Content Remove="wwwroot\images\headhunting.png" />
+    <Content Remove="wwwroot\images\instagram.ico" />
+    <Content Remove="wwwroot\images\it.png" />
+    <Content Remove="wwwroot\images\job1.webp" />
+    <Content Remove="wwwroot\images\linkedin.ico" />
+    <Content Remove="wwwroot\images\location.ico" />
+    <Content Remove="wwwroot\images\mail.ico" />
+    <Content Remove="wwwroot\images\medical-history.png" />
+    <Content Remove="wwwroot\images\pencil.png" />
+    <Content Remove="wwwroot\images\phone.ico" />
+    <Content Remove="wwwroot\images\science.png" />
+    <Content Remove="wwwroot\images\social-media.png" />
+    <Content Remove="wwwroot\images\transportation.png" />
+    <Content Remove="wwwroot\images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\agriculture.png" />
+    <None Include="wwwroot\images\candidate.png" />
+    <None Include="wwwroot\images\compliant.png" />
+    <None Include="wwwroot\images\digital-marketing.png" />
+    <None Include="wwwroot\images\employee.png" />
+    <None Include="wwwroot\images\engineer.png" />
+    <None Include="wwwroot\images\facebook.ico" />
+    <None Include="wwwroot\images\growth.png" />
+    <None Include="wwwroot\images\header1.jpg" />
+    <None Include="wwwroot\images\headhunting.png" />
+    <None Include="wwwroot\images\instagram.ico" />
+    <None Include="wwwroot\images\it.png" />
+    <None Include="wwwroot\images\job1.webp" />
+    <None Include="wwwroot\images\linkedin.ico" />
+    <None Include="wwwroot\images\location.ico" />
+    <None Include="wwwroot\images\mail.ico" />
+    <None Include="wwwroot\images\medical-history.png" />
+    <None Include="wwwroot\images\pencil.png" />
+    <None Include="wwwroot\images\phone.ico" />
+    <None Include="wwwroot\images\science.png" />
+    <None Include="wwwroot\images\social-media.png" />
+    <None Include="wwwroot\images\transportation.png" />
+    <None Include="wwwroot\images\user.png" />
+  </ItemGroup>
+
+</Project>
