@@ -11,6 +11,7 @@ namespace JobHunt.Controllers
             ViewData["Title"] = "Home";
             ViewBag.Quote = "Your Dream Job Awaits!";
             TempData["Quote2"] = "Discover thousands of job opportunities tailored to your skills and ambitions.\r\nJoin now to find the perfect match and take the next step in your career journey.";
+            TempData.Keep();
             return View();
         }
 
