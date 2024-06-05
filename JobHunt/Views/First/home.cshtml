@@ -7,27 +7,11 @@
 </head>
 
 <body>
-    <header id="navbar" class="navbar">
-        <div class="logo">
-            <img src="~/images/headhunting.png" alt="logo">
-            <h1>Job Hunt</h1>
-        </div>
-        <ul>
-            <li><a href="#" target="_blank">Home</a> </li>
-            <li><a href="#" target="_blank">Jobs</a></li>
-            <li><a href="#" target="_blank">Candidates</a></li>
-            <li><a href="#" target="_blank">Blog</a></li>
-            <li><a href="#" target="_blank">Contact us</a></li>
-            <button type="button">Post job</button>
-            <button type="button">Want job?</button>
-        </ul>
-        <img id="user" src="~/images/user.png" alt="user">
-    </header>
+    
     <div class="bground">
         <div class="headings">
-            <h1 id="heading1">Your Dream Job Awaits!</h1>
-            <h3 id="heading2">"Discover thousands of job opportunities tailored to your skills and ambitions.
-                Join now to find the perfect match and take the next step in your career journey."</h3>
+            <h1 id="heading1">@ViewBag.Quote</h1>
+            <h3 id="heading2">@TempData["Quote2"]</h3>
             <div class="inputs">
                 <input type="text" placeholder="Search keywords" name="keywords">
                 <input type="text" placeholder="Enter location" name="location">
@@ -94,7 +78,7 @@
                 <h6 id="v3">0 Vacancy</h6>
             </div>
             <div class="findJob">
-                <img src="engineer.png" alt="imageEngineering">
+                <img src="~/images/engineer.png" alt="imageEngineering">
                 <h5 id="c4"><a href="#">Engineering</a></h5>
                 <h6 id="v4">0 Vacancy</h6>
             </div>
@@ -158,59 +142,7 @@
     </div>
 
 
-    <footer class="bottom">
-        <div class="footerClass">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <div class="company">
-                        <ul>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Terms and conditions</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <div class="quicklinks">
-                        <ul>
-                            <li>
-                                <img src="~/images/phone.ico" alt="Phone Icon"><a href="tel:03243132991"> +92 324 3132991</a>
-                            </li>
-                            <li>
-                                <img src="~/images/mail.ico" alt="Mail Icon"><a href="mailto:em.mehak04@gmail.com">
-                                    em.mehak04@gmail.com</a></li>
-                            <li>
-                                <img src="~/images/location.ico" alt="Location Icon"><a href="#"> Sialkot,
-                                    Pakistan</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="footer-col">
-                    <h4>Follow us at</h4>
-                        <ul class="social">
-                            <li><a
-                                    href="https://www.linkedin.com/in/mehak-eman-2a229a24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="~/images/linkedin.ico" alt="LinkedIn Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/EM.MEHAK19?mibextid=ZbWKwL">
-                                <img src="~/images/facebook.ico"
-                                        alt="Facebook Icon"></a></li>
-                        <li>
-                            <a href="https://www.instagram.com/em.mehak">
-                                <img src="~/images/instagram.ico"
-                                        alt="Instagram Icon"></a></li>
-                        </ul>
-
-                </div>
-            </div>
-        </div>
-    </footer>
+   
 
 </body>
 
