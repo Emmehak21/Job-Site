@@ -237,10 +237,9 @@ header {
         border: 2px solid #67b3bb;
     }
 
-        .images img:hover {
-            -webkit-filter: grayscale(100%) blur(3px);
+.images img:hover {
             filter: grayscale(100%) blur(3px);
-        }
+}
 
 #head1 {
     margin-top: 85px;
