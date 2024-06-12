@@ -1,0 +1,133 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+    margin: 25px 25px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 25px;
+}
+
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #4c929b;
+}
+
+/* Form Styles */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus, select:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+/* Button Styles */
+
+.btn-submit {
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    .btn-submit:hover {
+        background-color: #1976d2;
+    }
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: #2196f3;
+}
+
+    a:hover {
+        color: #1976d2;
+    }
+
+/* Other Styles */
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Custom Styles */
+
+.form-header {
+    background-color: #2196f3;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.form-footer {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+

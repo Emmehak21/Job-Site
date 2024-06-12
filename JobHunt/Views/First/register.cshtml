@@ -1,0 +1,63 @@
+﻿@using static jobHunt.Models.Registeruser
+@model jobHunt.Models.Registeruser
+@{
+    Layout = null;
+}
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Register- Job Hunt</title>
+    <link rel="stylesheet" href="~/css/register.css" type="text/css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Register yourself</h2>
+        @using (Html.BeginForm("register", "First", FormMethod.Post))
+        {
+            
+                if (ViewBag.msg != 0)
+                {
+                    if (ViewBag.msg == 0)
+                    {
+                        <div class="alert alert-danger">Invalid login credentials!</div>
+                    }
+                }
+            
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.name, new { @id = "full-name" ,@name = "name" ,@placeholder = "Please enter your full name" })
+            </div>
+
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.uemail, new {@id = "email", @name = "uemail", @placeholder = "Please enter your emai" })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.uphone, new {@id = "phone-number", @name = "uphone", @placeholder = "Please enter your phone number" })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.ucity, new {@id = "city", @name = "ucity", @placeholder = "Please enter your city" })
+            </div>
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.ucountry, new {@id = "country", @name = "ucountry", @placeholder = "Please enter your country" })
+
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(m => m.upass, new {@id = "password", @name = "upass", @placeholder = "Please enter your password" })
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(m => m.upassc, new {@id = "confirm-password", @name = "upassc", @placeholder = "Please enter your password again" })
+               
+            </div>
+            <div class="form-group">
+                @Html.DropDownListFor(m => m.gender,
+                         new SelectList(Enum.GetValues(typeof(Gender)),
+                         "Select Gender"))
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Sign Up</button>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+        }
+    </div>
+</body>
+
+

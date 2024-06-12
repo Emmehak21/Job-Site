@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Job Hunt</title>
         <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~js/site.js"></script>
 
 </head>
 <body>
@@ -19,8 +20,13 @@
             <li><a href="@Url.Action("Candidates","First")" target="_blank">Candidates</a></li>
             <li><a href="@Url.Action("blog","First")" target="_blank">Blog</a></li>
             <li><a href="@Url.Action("ContactUs", "First")" target="_blank">Contact us</a></li>
-            <button type="button">Post job</button>
-            <button type="button">Want job?</button>
+            <a href="@Url.Action("login", "First")" target="_blank" ">
+                <button type="button">Login</button>
+                </a>
+            <a href="@Url.Action("register", "First")" target="_blank">
+                <button type="button">Register</button
+                ></a>
+       
         </ul>
         <img id="user" src="~/images/user.png" alt="user">
     </header>

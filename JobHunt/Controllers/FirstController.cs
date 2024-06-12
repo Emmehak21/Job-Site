@@ -1,10 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using jobHunt.Data;
+using jobHunt.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 
 namespace JobHunt.Controllers
 {
     public class FirstController : Controller
     {
-      
+        private readonly DbContextClass dbContextClass;
+        private readonly ILogger<FirstController> logger;
+        public FirstController(DbContextClass dbContextClass, ILogger<FirstController> logger)
+        {
+            this.dbContextClass = dbContextClass;
+            this.logger = logger;
+        }
+
         public IActionResult home()
 
         {
@@ -37,6 +47,58 @@ namespace JobHunt.Controllers
 
         {
             ViewData["Title"] = "Contact Us";
+            return View();
+        }
+        public IActionResult resume()
+
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult login(login log)
+
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var status = dbContextClass.reg.Where(m => m.uemail == log.uemail && m.upass == log.upass).FirstOrDefault();
+                    if (status == null)
+                    {
+                        ViewBag.status = 0;
+                        ViewBag.msg = "You are not registered! create an account first.";
+                    }
+                    else
+                    {
+                        ViewBag.msg = "Login successful.";
+                        return RedirectToAction("job", "First");
+                    }
+
+                }
+            }
+            catch (Exception ex) { }
+            
+            
+            return View();
+        }
+        [HttpGet]
+        public IActionResult register(Registeruser reg)
+
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+
+                    dbContextClass.Add(reg);
+                    dbContextClass.SaveChanges();
+                    return RedirectToAction("job", "First");
+
+
+                }
+            }catch (Exception ex) { }
+
+            ViewBag.msg = 0;
             return View();
         }
 

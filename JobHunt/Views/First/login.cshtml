@@ -1,0 +1,56 @@
+﻿@using static jobHunt.Models.login
+@model jobHunt.Models.login
+@{
+    Layout = null;
+}
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login- Job Hunt</title>
+    <
+    <link rel="stylesheet" href="~/css/login.css" type="text/css">
+   
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-header">
+            <h2>Login to Your Account</h2>
+        </div>
+        
+        @using (Html.BeginForm("login", "First", FormMethod.Post))
+        {
+
+            if (ViewBag.status != null)
+            {
+                if (ViewBag.status == 0)
+                {
+                    <div class="alert alert-danger">Invalid login credentials!</div>
+                }
+            }
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.uemail, new { @id = "email", @name = "uemail", @placeholder = "Please enter your emai" })
+                <span class="error-message" id="username-error"></span>
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(m => m.upass, new { @id = "password", @name = "upass", @placeholder = "Please enter your password" })
+                <span class="error-message" id="password-error"></span>
+            </div>
+            <div class="form-group" id="chk">
+                <label for="show">Show password</label>
+                <input type="checkbox" id="show" name="show">
+
+            </div>
+            <button class="btn-submit">Login</button>
+            <a href="#">Don't have an account? Sign up</a>
+            <a href="#">Forgot your password? Reset password</a>
+            <p>@ViewBag.msg</p>
+        }
+        <div class="form-footer">
+            <p>&copy; 2023 Job Hunt. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+
+

@@ -1,0 +1,145 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+
+
+.search-bar {
+    margin-top: 10px;
+}
+
+    .search-bar input {
+        padding: 10px;
+        width: 120px;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .search-bar button {
+        padding: 10px 20px;
+        background-color: white;
+        background-color: rgb(41, 3, 77);
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+.banner {
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+    .banner h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .banner p {
+        margin: 10px 0 0;
+    }
+
+main {
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Sidebar Styles */
+aside {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+    .filter label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .filter input, .filter select {
+        width: 120px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+#filter-button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Job Listings Styles */
+#job-listings {
+    flex: 3;
+    padding: 20px;
+    background-color: white;
+}
+
+    #job-listings h2 {
+        margin-top: 0;
+    }
+
+.job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+    .job-card h3 {
+        margin: 0 0 10px;
+    }
+
+    .job-card p {
+        margin: 5px 0;
+    }
+
+    .job-card button {
+        padding: 10px 20px;
+        background: linear-gradient(45deg, #99d2d8, #4c929b);
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+

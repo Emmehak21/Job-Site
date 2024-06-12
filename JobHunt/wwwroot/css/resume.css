@@ -1,0 +1,68 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #99d2d8, #4c929b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.upload-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.upload-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .upload-form .form-group {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .upload-form .form-group label {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .upload-form .form-group input[type="text"],
+        .upload-form .form-group input[type="file"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+    .upload-form button {
+        padding: 0.75rem;
+        background: linear-gradient(45deg, #99d2d8, #4c929b);
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        align-self: stretch;
+    }
+
+        .upload-form button:hover {
+            background-color: #4cae4c;
+        }

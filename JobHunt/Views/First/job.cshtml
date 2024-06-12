@@ -2,6 +2,108 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Job Hunt</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/job.css" />
 
 </head>
+<body>
+    <div class="banner">
+        <h2>Just graduating? We can help.</h2>
+        <p>Start your job search now and find the perfect fit for you.</p>
+    </div>
+
+    <main>
+        <aside>
+            <h2>Filters</h2>
+            <div class="filter">
+                <label for="location-filter">Location</label>
+                <input type="text" id="location-filter" placeholder="e.g., Pakistan">
+            </div>
+            <div class="filter">
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="art">Arts</option>
+                    <option value="business">Business</option>
+                    <option value="education">Education</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="It">Information Technology</option>
+                    <option value="DA">Data analyst</option>
+                    <option value="law">Law enforcement</option>
+                    <option value="sales">Sales and Marketing</option>
+                    <option value="science">Science</option>
+                    <option value="transport">Transportation</option>
+                    <option value="media">Media</option>
+                    <option value="agriculture">Agriculture</option>
+                    <option value="photography">Photography</option>
+                    <option value="hospitality">Hospitality</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="type-filter">Job Type</label>
+                <select id="type-filter">
+                    <option value="">All Types</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="remote">Remote</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="salary-filter">Salary Range</label>
+                <input type="text" id="salary-filter" placeholder="e.g., 50,000 - 70,000">
+            </div>
+            <button id="filter-button">Apply Filters</button>
+        </aside>
+
+        <section id="job-listings">
+            <h2>Job Listings</h2>
+            <div class="job-card">
+                <h3>Frontend Developer</h3>
+                <p>Company: Tech Corp</p>
+                <p>Location: sialkot</p>
+                <p>Type: Full-time</p>
+                <p>Salary: 60,000 - 80,000</p>
+                <a href="@Url.Action("resume", "First")" target="_blank"><button>Apply Now</button></a>
+            </div>
+            <div class="job-card">
+                <h3>Backend Developer</h3>
+                <p>Company: Code Inc.</p>
+                <p>Location: islamabad</p>
+                <p>Type: Part-time</p>
+                <p>Salary: 40,000 - 60,000</p>
+                <a href="@Url.Action("resume", "First")" target="_blank"><button>Apply Now</button></a>
+            </div>
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p>Company: Design Studio</p>
+                <p>Location: lahore</p>
+                <p>Type: Remote</p>
+                <p>Salary: 50,000 - 70,000</p>
+                <a href="@Url.Action("resume", "First")" target="_blank"><button>Apply Now</button></a>
+            </div>
+            <div class="job-card">
+                <h3>Marketing Manager</h3>
+                <p>Company: Marketing Co.</p>
+                <p>Location: rawalpindi</p>
+                <p>Type: Full-time</p>
+                <p>Salary: 70,000 - 90,000</p>
+                <a href="@Url.Action("resume", "First")" target="_blank"><button>Apply Now</button></a>
+            </div>
+            <div class="job-card">
+                <h3>Graphic Designer</h3>
+                <p>Company: Creative Arts</p>
+                <p>Location:khybar pakhntunhawa</p>
+                <p>Type: Part-time</p>
+                <p>Salary:30,000 - 50,000</p>
+                <a href="@Url.Action("resume", "First")" target="_blank"><button>Apply Now</button></a>
+            </div>
+            <div class="pagination">
+                <button class="page-button">Previous</button>
+                <button class="page-button">1</button>
+                <button class="page-button">2</button>
+                <button class="page-button">3</button>
+                <button class="page-button">Next</button>
+            </div>
+        </section>
+    </main>
+</body>

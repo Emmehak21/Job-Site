@@ -1,4 +1,10 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+document.querySelectorAll('.read-more').forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const post = link.parentNode;
+        const content = post.querySelector('.post-content');
+        content.classList.toggle('show');
+    });
+});
 
-// Write your JavaScript code.
